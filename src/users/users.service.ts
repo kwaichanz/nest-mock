@@ -9,7 +9,7 @@ export class UsersService {
             userId: 1,
             username: 'john',
             password: 'width',
-            roles: [Role.Admin]
+            roles: [Role.Admin, Role.User]
         },
         {
             userId: 2,
@@ -17,6 +17,12 @@ export class UsersService {
             password: 'otaga',
             roles: [Role.User]
         },
+        {
+            userId: 3,
+            username: "admin",
+            password: "4321",
+            roles: [Role.Admin, Role.User]
+        }
     ];
 
     async findOne(username: string): Promise<User | undefined> {
